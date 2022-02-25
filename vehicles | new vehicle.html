@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>    vehicles | new vehicle
+</title>
+
+  <!-- inject material icons api -->
+  <link rel="stylesheet" href="vehicles%20|%20new%20vehicle_files/icon.css">
+  <!-- inject css styles -->
+    <link rel="stylesheet" href="vehicles%20|%20new%20vehicle_files/create.css">
+  <style>
+    .section-header--fixed-adjust {
+      margin-top: 72px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- top app bar  -->
+  <header class="mdc-top-app-bar">
+    <div class="mdc-top-app-bar__row">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button go-back-action mdc-ripple-upgraded--unbounded mdc-ripple-upgraded" aria-label="go back" style="--mdc-ripple-fg-size: 28px; --mdc-ripple-fg-scale: 1.7142857142857142; --mdc-ripple-left: 10px; --mdc-ripple-top: 10px;">
+    <div class="mdc-icon-button__ripple"></div>
+    <span class="material-icons">arrow_back</span>
+  </button>
+  <span class="mdc-top-app-bar__title">
+    Add new vehicle
+  </span>
+      </section>
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+          <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button mdc-ripple-upgraded--unbounded mdc-ripple-upgraded" aria-label="go back" id="save-vehicle" style="--mdc-ripple-fg-size: 28px; --mdc-ripple-fg-scale: 1.7142857142857142; --mdc-ripple-left: 10px; --mdc-ripple-top: 10px;">
+    <div class="mdc-icon-button__ripple"></div>
+    <span class="material-icons">add_box</span>
+  </button>
+      </section>
+    </div>
+  </header>
+
+
+  <!-- form for adding new offers  -->
+  <main class="mdc-top-app-bar--fixed-adjust">
+
+    <section class="mdc-tab-bar" role="tablist" style="position:fixed; z-index:24;background-color:white;">
+      <div class="mdc-tab-scroller">
+        <div class="mdc-tab-scroller__scroll-area">
+          <div class="mdc-tab-scroller__scroll-content">
+                      </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-header--fixed-adjust">
+        <div class="mdc-layout-grid">
+      <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+
+
+          <div class="mdc-card" data-card="form">
+          <div class="mdc-card__content">
+
+              
+              <form action="/vehicles" method="post" data-form="vehicle" id="vehicle-form" enctype="multipart/form-data">
+
+                            <input type="hidden" name="_token" value="ESHnjVKOsetTbpbJ8KpL4TrAUzM2b0qzJjuVjzdN">              <section class="row">
+                <article>
+                  <article>
+    <label class="mdc-text-field mdc-text-field--outlined">
+      
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label " id="title">Vehicle Title</span>
+        <input class="mdc-text-field__input" type="text" autocomplete="off" name="title" aria-labelledby="title" aria-controls="titlehelper-text" aria-describedby="titlehelper-text">
+        <span class="mdc-line-ripple"></span>
+    </label>
+    <div class="mdc-text-field-helper-line">
+        <div class="mdc-text-field-helper-text" id="titlehelper-text" aria-hidden="true">
+            enter vehicle title
+        </div>
+    </div>
+</article>
+
+                  <article>
+    <label class="mdc-text-field mdc-text-field--outlined">
+      
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label " id="price">Vehicle price</span>
+        <input class="mdc-text-field__input" type="text" autocomplete="off" name="price" aria-labelledby="price" aria-controls="pricehelper-text" aria-describedby="pricehelper-text">
+        <span class="mdc-line-ripple"></span>
+    </label>
+    <div class="mdc-text-field-helper-line">
+        <div class="mdc-text-field-helper-text" id="pricehelper-text" aria-hidden="true">
+            enter vehicle price
+        </div>
+    </div>
+</article>
+
+                </article>
+
+                <article class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0">
+                  <label for="image" class="image my-card__media mdc-card__media mdc-card__media--square">
+                    <div class="mdc-card__media-content">
+                      <img alt="" class="image__preview">
+                    </div>
+                    <span class="material-icons image__icon " aria-hidden="true">add_photo_alternate</span>
+                    <input class="image__input" value="" type="file" accept="image/*" id="image" name="image">
+                  </label>
+                  <div class="mdc-card__ripple"></div>
+                </article>
+              </section>
+
+
+              <section class="row">
+
+                <article>
+    <label class="mdc-text-field mdc-text-field--outlined">
+      
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label " id="year">Vehicle year</span>
+        <input class="mdc-text-field__input" type="text" autocomplete="off" name="year" aria-labelledby="year" aria-controls="yearhelper-text" aria-describedby="yearhelper-text">
+        <span class="mdc-line-ripple"></span>
+    </label>
+    <div class="mdc-text-field-helper-line">
+        <div class="mdc-text-field-helper-text" id="yearhelper-text" aria-hidden="true">
+            enter vehicle year of manufacturer
+        </div>
+    </div>
+</article>
+
+                <article>
+    <label class="mdc-text-field mdc-text-field--outlined">
+      
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label " id="hours">Vehicle hours</span>
+        <input class="mdc-text-field__input" type="text" autocomplete="off" name="hours" aria-labelledby="hours" aria-controls="hourshelper-text" aria-describedby="hourshelper-text">
+        <span class="mdc-line-ripple"></span>
+    </label>
+    <div class="mdc-text-field-helper-line">
+        <div class="mdc-text-field-helper-text" id="hourshelper-text" aria-hidden="true">
+            enter amount of hours spent by vehicle
+        </div>
+    </div>
+</article>
+
+
+
+                <article>
+    <label class="mdc-text-field mdc-text-field--outlined">
+      
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label " id="power">Vehicle power</span>
+        <input class="mdc-text-field__input" type="text" autocomplete="off" name="power" aria-labelledby="power" aria-controls="powerhelper-text" aria-describedby="powerhelper-text">
+        <span class="mdc-line-ripple"></span>
+    </label>
+    <div class="mdc-text-field-helper-line">
+        <div class="mdc-text-field-helper-text" id="powerhelper-text" aria-hidden="true">
+            enter vehicle's power
+        </div>
+    </div>
+</article>
+
+                <article>
+    <label class="mdc-text-field mdc-text-field--outlined">
+      
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label " id="speed">Vehicle speed</span>
+        <input class="mdc-text-field__input" type="text" autocomplete="off" name="speed" aria-labelledby="speed" aria-controls="speedhelper-text" aria-describedby="speedhelper-text">
+        <span class="mdc-line-ripple"></span>
+    </label>
+    <div class="mdc-text-field-helper-line">
+        <div class="mdc-text-field-helper-text" id="speedhelper-text" aria-hidden="true">
+            enter vehicle's speed
+        </div>
+    </div>
+</article>
+
+              </section>
+
+              <section class="row">
+                <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--with-internal-counter mdc-text-field--label-floating">
+        <span class="mdc-notched-outline mdc-notched-outline--upgraded mdc-notched-outline--notched">
+        <span class="mdc-notched-outline__leading"></span>
+        <span class="mdc-notched-outline__notch" style="width: 123.5px;">
+            <span class="mdc-floating-label mdc-floating-label--float-above" id="description" style="">Vehicle description</span>
+        </span>
+        <span class="mdc-notched-outline__trailing"></span>
+        </span>
+        <span class="mdc-text-field__resizer">
+        <textarea class="mdc-text-field__input" aria-labelledby="description" rows="8" cols="80" maxlength="140" autocomplete="off" name="description" aria-controls="descriptionhelper-text" aria-describedby="descriptionhelper-text"> </textarea>
+        <span class="mdc-text-field-character-counter">1 / 140</span>
+        </span>
+    </label>
+    <div class="mdc-text-field-helper-line">
+        <div class="mdc-text-field-helper-text" id="descriptionhelper-text" aria-hidden="true">
+            write few line to describe your vehicle
+        </div>
+    </div>              </section>
+              </form>
+          </div>
+          </div>
+      </div>
+
+      </div>
+  </div>
+    </section>
+
+  </main>
+
+
+  <!-- inject js scripts -->
+    <script src="vehicles%20|%20new%20vehicle_files/create.js"></script>
+
+
+</body></html>
